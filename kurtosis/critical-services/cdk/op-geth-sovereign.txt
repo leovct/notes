@@ -1,0 +1,98 @@
+Name:            cdk
+UUID:            409739d667a5
+Status:          RUNNING
+Creation Time:   Thu, 20 Nov 2025 15:05:59 UTC
+Flags:           
+
+========================================= Files Artifacts =========================================
+UUID           Name
+c042ee1aba36   1-lighthouse-geth-0-127
+57917f6a6bb6   add_rollup_type.json
+873e6d7e949d   aged-tree
+ea78a0add399   aggkit-config-artifact
+fc34409acd33   aggkit-sequencer-keystore
+55957d54dc17   agglayer-config-artifact
+ed472f2e2082   agglayer-dashboard-config
+1abe5772a628   agglayer-prover-config-artifact
+52ac783e3c0a   agglogger-config
+555fce6b084f   aggoracle-keystore
+059fe5bffe0a   aggregator-keystore
+01127ae18aaa   bridge-config-artifact
+04328079d668   bridge-spammer-script
+dfab8800cf70   cdk-erigon-chain-allocs
+5fdd1ba7343e   cdk-erigon-chain-config
+19cd047f7e1c   cdk-erigon-chain-first-batch
+a7a05545ea08   cdk-erigon-custom-genesis-addresses.json
+f8193da9cd3e   claimsponsor-keystore
+d06f3f19aa47   contracts.sh
+3349a7a21bf5   create-genesis-sovereign-params.json
+d9495b0577d0   create_new_rollup.json
+4e4c2c147036   create_op_allocs.py
+b6e6a33cbd0e   create_rollup_parameters.json
+4d7b38a63cb1   deploy_parameters.json
+8acaaa110b29   el_cl_genesis_data
+98dbbcfa31d6   final-genesis-timestamp
+83235fa2706d   genesis-el-cl-env-file
+a422e2a3532c   genesis_validators_root
+be1d06116feb   init.sql-001
+bada07538ea1   input_args.json
+28c2c24061aa   intent.json
+29c28b848cb0   json2http.py
+3937435e118c   jwt_file
+ba8a46f59f11   keymanager_file
+effd60db7529   op-custom-genesis-addresses.json
+c5ebbfb91514   op-deployer-configs
+e35631d78a06   op-deployer-fund-script
+98ca0eda66de   op_jwt_file
+cce24b64bf9b   predeployed_allocs.json
+7fd0dc4fc152   proxyd-config-2151908
+3577825c4ee4   prysm-password
+576f9b5c72ef   sovereignadmin-keystore
+6d97f1e687e8   validator-ranges
+
+========================================== User Services ==========================================
+UUID           Name                                             Ports                                                Status
+a572b2a5e368   aggkit-001                                       pprof: 6060/tcp -> http://127.0.0.1:32796            RUNNING
+                                                                rpc: 5576/tcp -> http://127.0.0.1:32795              
+6f4b256297bc   aggkit-001-bridge                                pprof: 6060/tcp -> http://127.0.0.1:32799            RUNNING
+                                                                rest: 5577/tcp -> http://127.0.0.1:32798             
+                                                                rpc: 5576/tcp -> http://127.0.0.1:32797              
+b5ec912612aa   agglayer                                         aglr-admin: 4446/tcp -> http://127.0.0.1:32793       RUNNING
+                                                                aglr-grpc: 4443/tcp -> grpc://127.0.0.1:32791        
+                                                                aglr-readrpc: 4444/tcp -> http://127.0.0.1:32792     
+                                                                prometheus: 9092/tcp -> http://127.0.0.1:32794       
+e5fca545fab2   agglayer-dashboard                               dashboard: 8000/tcp -> http://127.0.0.1:32803        RUNNING
+ddb22a2cec51   agglayer-prover                                  api: 4445/tcp -> grpc://127.0.0.1:32789              RUNNING
+                                                                prometheus: 9093/tcp -> http://127.0.0.1:32790       
+32c56d493e59   agglogger                                        <none>                                               RUNNING
+7401672309da   bridge-spammer-001                               <none>                                               RUNNING
+66e3bddeff4a   cl-1-lighthouse-geth                             http: 4000/tcp -> http://127.0.0.1:32774             RUNNING
+                                                                metrics: 5054/tcp -> http://127.0.0.1:32775          
+                                                                quic-discovery: 9001/udp -> 127.0.0.1:32770          
+                                                                tcp-discovery: 9000/tcp -> 127.0.0.1:32776           
+                                                                udp-discovery: 9000/udp -> 127.0.0.1:32769           
+f7a5736fded0   contracts-001                                    http: 8080/tcp -> http://127.0.0.1:32778             RUNNING
+6ddbee8aea14   el-1-geth-lighthouse                             engine-rpc: 8551/tcp -> 127.0.0.1:32771              RUNNING
+                                                                metrics: 9001/tcp -> http://127.0.0.1:32772          
+                                                                rpc: 8545/tcp -> 127.0.0.1:32769                     
+                                                                tcp-discovery: 30303/tcp -> 127.0.0.1:32773          
+                                                                udp-discovery: 30303/udp -> 127.0.0.1:32768          
+                                                                ws: 8546/tcp -> 127.0.0.1:32770                      
+42e48860ec82   op-batcher-001                                   http: 8548/tcp -> http://127.0.0.1:32785             RUNNING
+bd5213f89dd1   op-cl-1-op-node-op-geth-001                      rpc: 8547/tcp -> http://127.0.0.1:32783              RUNNING
+                                                                tcp-discovery: 9003/tcp -> http://127.0.0.1:32784    
+                                                                udp-discovery: 9003/udp -> http://127.0.0.1:32772    
+f7cd15eb248c   op-el-1-op-geth-op-node-001                      engine-rpc: 8551/tcp -> http://127.0.0.1:32781       RUNNING
+                                                                rpc: 8545/tcp -> http://127.0.0.1:32779              
+                                                                tcp-discovery: 30303/tcp -> http://127.0.0.1:32782   
+                                                                udp-discovery: 30303/udp -> http://127.0.0.1:32771   
+                                                                ws: 8546/tcp -> ws://127.0.0.1:32780                 
+12bd9ecce93e   op-proposer-001                                  http: 8560/tcp -> http://127.0.0.1:32786             RUNNING
+ce2fd28ce741   postgres-001                                     postgres: 5432/tcp -> postgresql://127.0.0.1:32788   RUNNING
+74fe67680925   proxyd-001                                       http: 8080/tcp -> http://127.0.0.1:32787             RUNNING
+60e5d2a69ff4   test-runner                                      <none>                                               RUNNING
+926a6952e2c7   validator-key-generation-cl-validator-keystore   <none>                                               RUNNING
+4a3d457e4dfb   vc-1-geth-lighthouse                             metrics: 8080/tcp -> http://127.0.0.1:32777          RUNNING
+8edc5b68897a   zkevm-bridge-service-001                         grpc: 9090/tcp -> grpc://127.0.0.1:32802             RUNNING
+                                                                prometheus: 8090/tcp -> http://127.0.0.1:32801       
+                                                                rpc: 8080/tcp -> http://127.0.0.1:32800              

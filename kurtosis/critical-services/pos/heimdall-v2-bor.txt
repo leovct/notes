@@ -1,0 +1,132 @@
+Name:            pos
+UUID:            fb80d358e043
+Status:          RUNNING
+Creation Time:   Thu, 20 Nov 2025 15:05:12 UTC
+Flags:           
+
+========================================= Files Artifacts =========================================
+UUID           Name
+f1cabf241fad   1-lighthouse-geth-0-63
+f7d0bd7cc34b   container-proc-manager-script
+9e58c4eb37f9   el_cl_genesis_data
+d0c77b34d3a2   final-genesis-timestamp
+a948edabf276   genesis-el-cl-env-file
+c33e32a2212a   genesis_validators_root
+268b12bf7a95   jwt_file
+2f991bc09bf4   keymanager_file
+ac4c022decc9   l2-cl-1-heimdall-v2-bor-validator-config
+0ba6ca114232   l2-cl-1-heimdall-v2-bor-validator-node-config
+c6cfbd8c655c   l2-cl-2-heimdall-v2-bor-validator-config
+5e5ff79b38c8   l2-cl-2-heimdall-v2-bor-validator-node-config
+d0447c809132   l2-cl-3-heimdall-v2-bor-validator-config
+56375c4ca28f   l2-cl-3-heimdall-v2-bor-validator-node-config
+d41991298570   l2-cl-4-heimdall-v2-bor-validator-config
+35471e3f1c06   l2-cl-4-heimdall-v2-bor-validator-node-config
+18f2ccc4db9a   l2-cl-genesis
+ab69152a3bd9   l2-cl-genesis-builder-config
+74efbd1e0c7d   l2-cl-genesis-tmp
+dd6818c3cc19   l2-cl-persistent-peers
+2c9941ed1ba2   l2-el-1-bor-heimdall-v2-validator-credentials-config
+089eea2ccc55   l2-el-1-bor-heimdall-v2-validator-credentials-generator-config
+a1ad53a15a6e   l2-el-1-bor-heimdall-v2-validator-node-config
+17f68ac27f14   l2-el-2-bor-heimdall-v2-validator-credentials-config
+f9eef771ac7f   l2-el-2-bor-heimdall-v2-validator-credentials-generator-config
+6f0075164f1c   l2-el-2-bor-heimdall-v2-validator-node-config
+28c8ae7c6d89   l2-el-3-bor-heimdall-v2-validator-credentials-config
+403e058b2dec   l2-el-3-bor-heimdall-v2-validator-credentials-generator-config
+b29db6e90fde   l2-el-3-bor-heimdall-v2-validator-node-config
+f4f6ac7e8c9c   l2-el-4-bor-heimdall-v2-validator-credentials-config
+934cae72e663   l2-el-4-bor-heimdall-v2-validator-credentials-generator-config
+a96807c8c4b8   l2-el-4-bor-heimdall-v2-validator-node-config
+fccb6ba0d38b   l2-el-5-bor-heimdall-v2-rpc-credentials-config
+626b47407ef3   l2-el-5-bor-heimdall-v2-rpc-credentials-generator-config
+51ad40d80d3c   l2-el-5-bor-heimdall-v2-rpc-node-config
+9f1a3fc3ad7e   l2-el-6-bor-heimdall-v2-rpc-credentials-config
+fe5e1f941b48   l2-el-6-bor-heimdall-v2-rpc-credentials-generator-config
+c4e3d81d95bc   l2-el-6-bor-heimdall-v2-rpc-node-config
+cb3cd3628caa   l2-el-genesis
+8f9661200c41   l2-el-genesis-builder-config
+e11236c406b4   l2-el-genesis-tmp
+52d8647b03c1   l2-validator-config-generator-config
+0dd63a9182d9   l2-validators-config
+7ee71af823f5   matic-contract-addresses
+8adfa4a77576   matic-contract-l1-addresses
+d283a69989fc   matic-contracts-l1-deployer-config
+1901d40e970e   matic-contracts-l2-deployer-config
+f9b879406079   prysm-password
+7ab2e2d4fa27   validator-ranges
+
+========================================== User Services ==========================================
+UUID           Name                                             Ports                                              Status
+2476a35b7864   cl-1-lighthouse-geth                             http: 4000/tcp -> http://127.0.0.1:32774           RUNNING
+                                                                metrics: 5054/tcp -> http://127.0.0.1:32775        
+                                                                quic-discovery: 9001/udp                           
+                                                                tcp-discovery: 9000/tcp -> 127.0.0.1:32776         
+                                                                udp-discovery: 9000/udp                            
+6a620d5bc769   el-1-geth-lighthouse                             engine-rpc: 8551/tcp -> 127.0.0.1:32771            RUNNING
+                                                                metrics: 9001/tcp -> http://127.0.0.1:32772        
+                                                                rpc: 8545/tcp -> 127.0.0.1:32769                   
+                                                                tcp-discovery: 30303/tcp -> 127.0.0.1:32773        
+                                                                udp-discovery: 30303/udp                           
+                                                                ws: 8546/tcp -> 127.0.0.1:32770                    
+ef6b68b733dd   l2-cl-1-heimdall-v2-bor-validator                grpc: 3132/tcp -> grpc://127.0.0.1:32780           RUNNING
+                                                                http: 1317/tcp -> http://127.0.0.1:32779           
+                                                                metrics: 26660/tcp -> http://127.0.0.1:32784       
+                                                                node-listen: 26656/tcp -> http://127.0.0.1:32782   
+                                                                pprof: 6060/tcp -> http://127.0.0.1:32781          
+                                                                rpc: 26657/tcp -> http://127.0.0.1:32783           
+32dfead5b7d0   l2-cl-2-heimdall-v2-bor-validator                grpc: 3132/tcp -> grpc://127.0.0.1:32792           RUNNING
+                                                                http: 1317/tcp -> http://127.0.0.1:32791           
+                                                                metrics: 26660/tcp -> http://127.0.0.1:32796       
+                                                                node-listen: 26656/tcp -> http://127.0.0.1:32794   
+                                                                pprof: 6060/tcp -> http://127.0.0.1:32793          
+                                                                rpc: 26657/tcp -> http://127.0.0.1:32795           
+a0660eef5770   l2-cl-3-heimdall-v2-bor-validator                grpc: 3132/tcp -> grpc://127.0.0.1:32804           RUNNING
+                                                                http: 1317/tcp -> http://127.0.0.1:32803           
+                                                                metrics: 26660/tcp -> http://127.0.0.1:32808       
+                                                                node-listen: 26656/tcp -> http://127.0.0.1:32806   
+                                                                pprof: 6060/tcp -> http://127.0.0.1:32805          
+                                                                rpc: 26657/tcp -> http://127.0.0.1:32807           
+50e4f6ba8a5f   l2-cl-4-heimdall-v2-bor-validator                grpc: 3132/tcp -> grpc://127.0.0.1:32816           RUNNING
+                                                                http: 1317/tcp -> http://127.0.0.1:32815           
+                                                                metrics: 26660/tcp -> http://127.0.0.1:32820       
+                                                                node-listen: 26656/tcp -> http://127.0.0.1:32818   
+                                                                pprof: 6060/tcp -> http://127.0.0.1:32817          
+                                                                rpc: 26657/tcp -> http://127.0.0.1:32819           
+3c57c1d37581   l2-el-1-bor-heimdall-v2-validator                discovery: 30303/tcp -> http://127.0.0.1:32789     RUNNING
+                                                                metrics: 7071/tcp -> http://127.0.0.1:32786        
+                                                                pprof: 6060/tcp -> http://127.0.0.1:32785          
+                                                                rpc: 8545/tcp -> http://127.0.0.1:32787            
+                                                                ws: 8546/tcp -> ws://127.0.0.1:32788               
+9f2efaccfe2c   l2-el-2-bor-heimdall-v2-validator                discovery: 30303/tcp -> http://127.0.0.1:32801     RUNNING
+                                                                metrics: 7071/tcp -> http://127.0.0.1:32798        
+                                                                pprof: 6060/tcp -> http://127.0.0.1:32797          
+                                                                rpc: 8545/tcp -> http://127.0.0.1:32799            
+                                                                ws: 8546/tcp -> ws://127.0.0.1:32800               
+c273f691aee6   l2-el-3-bor-heimdall-v2-validator                discovery: 30303/tcp -> http://127.0.0.1:32813     RUNNING
+                                                                metrics: 7071/tcp -> http://127.0.0.1:32810        
+                                                                pprof: 6060/tcp -> http://127.0.0.1:32809          
+                                                                rpc: 8545/tcp -> http://127.0.0.1:32811            
+                                                                ws: 8546/tcp -> ws://127.0.0.1:32812               
+511848d6b238   l2-el-4-bor-heimdall-v2-validator                discovery: 30303/tcp -> http://127.0.0.1:32825     RUNNING
+                                                                metrics: 7071/tcp -> http://127.0.0.1:32822        
+                                                                pprof: 6060/tcp -> http://127.0.0.1:32821          
+                                                                rpc: 8545/tcp -> http://127.0.0.1:32823            
+                                                                ws: 8546/tcp -> ws://127.0.0.1:32824               
+1e35494800f9   l2-el-5-bor-heimdall-v2-rpc                      discovery: 30303/tcp -> http://127.0.0.1:32830     RUNNING
+                                                                metrics: 7071/tcp -> http://127.0.0.1:32827        
+                                                                pprof: 6060/tcp -> http://127.0.0.1:32826          
+                                                                rpc: 8545/tcp -> http://127.0.0.1:32828            
+                                                                ws: 8546/tcp -> ws://127.0.0.1:32829               
+840cc78f7384   l2-el-6-bor-heimdall-v2-rpc                      discovery: 30303/tcp -> http://127.0.0.1:32835     RUNNING
+                                                                metrics: 7071/tcp -> http://127.0.0.1:32832        
+                                                                pprof: 6060/tcp -> http://127.0.0.1:32831          
+                                                                rpc: 8545/tcp -> http://127.0.0.1:32833            
+                                                                ws: 8546/tcp -> ws://127.0.0.1:32834               
+b2e9f0a06aef   rabbitmq-l2-cl-1-validator                       amqp: 5672/tcp -> amqp://127.0.0.1:32778           RUNNING
+8c92b6b1783e   rabbitmq-l2-cl-2-validator                       amqp: 5672/tcp -> amqp://127.0.0.1:32790           RUNNING
+b65e576bd689   rabbitmq-l2-cl-3-validator                       amqp: 5672/tcp -> amqp://127.0.0.1:32802           RUNNING
+d5ac5eb4fcb4   rabbitmq-l2-cl-4-validator                       amqp: 5672/tcp -> amqp://127.0.0.1:32814           RUNNING
+69c444a5d932   test-runner                                      <none>                                             RUNNING
+95f0d41a0ecc   validator-key-generation-cl-validator-keystore   <none>                                             RUNNING
+46c383508929   vc-1-geth-lighthouse                             metrics: 8080/tcp -> http://127.0.0.1:32777        RUNNING

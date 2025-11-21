@@ -1,0 +1,76 @@
+{
+  "cdk-erigon-aggchain-ecdsa-multisig": [
+    "aggkit-001",
+    "aggkit-001-bridge",
+    "agglayer",
+    "agglayer-prover",
+    "cdk-erigon-rpc-001",
+    "cdk-erigon-sequencer-001",
+    "postgres-001",
+    "zkevm-bridge-service-001",
+    "zkevm-pool-manager-001"
+  ],
+  "cdk-erigon-rollup": [
+    "agglayer",
+    "agglayer-prover",
+    "cdk-erigon-rpc-001",
+    "cdk-erigon-sequencer-001",
+    "cdk-node-001",
+    "postgres-001",
+    "zkevm-bridge-service-001",
+    "zkevm-pool-manager-001",
+    "zkevm-prover-001",
+    "zkevm-stateless-executor-001"
+  ],
+  "cdk-erigon-sovereign": [
+    "aggkit-001",
+    "aggkit-001-bridge",
+    "agglayer",
+    "agglayer-prover",
+    "cdk-erigon-rpc-001",
+    "cdk-erigon-sequencer-001",
+    "postgres-001",
+    "zkevm-bridge-service-001",
+    "zkevm-pool-manager-001"
+  ],
+  "cdk-erigon-validium": [
+    "agglayer",
+    "agglayer-prover",
+    "cdk-erigon-rpc-001",
+    "cdk-erigon-sequencer-001",
+    "cdk-node-001",
+    "postgres-001",
+    "zkevm-bridge-service-001",
+    "zkevm-dac-001",
+    "zkevm-pool-manager-001",
+    "zkevm-prover-001",
+    "zkevm-stateless-executor-001"
+  ],
+  "op-geth-aggchain-ecdsa-multisig": [
+    "aggkit-001",
+    "aggkit-001-bridge",
+    "agglayer",
+    "agglayer-prover",
+    "postgres-001",
+    "zkevm-bridge-service-001"
+  ],
+  "op-geth-sovereign": [
+    "aggkit-001",
+    "aggkit-001-bridge",
+    "agglayer",
+    "agglayer-prover",
+    "op-proposer-001",
+    "postgres-001",
+    "zkevm-bridge-service-001"
+  ],
+  "op-succinct": [
+    "aggkit-001",
+    "aggkit-001-bridge",
+    "aggkit-prover-001",
+    "agglayer",
+    "agglayer-prover",
+    "op-succinct-proposer-001",
+    "postgres-001",
+    "zkevm-bridge-service-001"
+  ]
+}
