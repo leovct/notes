@@ -20,7 +20,7 @@ log_info "Using input file '${input_file}'"
 
 # Exclude non-critical services
 exclude_l1_services=("lighthouse-geth" "geth-lighthouse" "validator-key-generation")
-exclude_l2_op_services=("op-batcher" "op-cl" "op-el" "proxyd")
+exclude_l2_op_services=("op-batcher" "op-cl" "op-el" "op-proposer" "proxyd")
 exclude_setup_services=("contracts")
 exclude_additional_services=("agglayer-dashboard" "agglogger" "bridge-spammer" "test-runner" "tx-spammer")
 exclude_patterns=("${exclude_l1_services[@]}" "${exclude_l2_op_services[@]}" "${exclude_setup_services[@]}" "${exclude_additional_services[@]}")

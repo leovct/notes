@@ -59,7 +59,6 @@
     "aggkit-001-bridge",
     "agglayer",
     "agglayer-prover",
-    "op-proposer-001",
     "postgres-001",
     "zkevm-bridge-service-001"
   ],
